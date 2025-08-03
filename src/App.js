@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
+import UserTable from './components/UserTable';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="app-header">
+        <h1>React Table Assignment</h1>
+        <p>A performant data table with sorting, drag & drop column reordering, and 500+ records</p>
       </header>
+      <main>
+        <UserTable />
+      </main>
     </div>
   );
 }
