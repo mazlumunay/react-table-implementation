@@ -1,0 +1,173 @@
+.table-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.table-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.table-info {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table-info p {
+  margin: 5px 0;
+  color: #495057;
+  font-size: 14px;
+}
+
+.table-wrapper {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.user-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.draggable-header {
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: 600;
+  user-select: none;
+  transition: all 0.2s ease;
+  min-width: 120px;
+  position: relative;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.draggable-header:last-child {
+  border-right: none;
+}
+
+.draggable-header:hover {
+  background-color: rgba(255,255,255,0.1);
+  transform: translateY(-1px);
+}
+
+.user-table tbody tr {
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.2s ease;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background-color: rgba(0,0,0,0.02);
+}
+
+.user-table td {
+  padding: 12px;
+  border-right: 1px solid #dee2e6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.user-table td:last-child {
+  border-right: none;
+}
+
+.load-more {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 0 0 8px 8px;
+}
+
+.load-more-btn {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.load-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.load-more-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .table-container {
+    padding: 10px;
+  }
+  
+  .user-table {
+    font-size: 12px;
+  }
+  
+  .draggable-header {
+    padding: 10px 8px;
+    min-width: 100px;
+  }
+  
+  .user-table td {
+    padding: 8px;
+    max-width: 150px;
+  }
+  
+  .table-info {
+    padding: 10px;
+  }
+}
+
+/* Sort indicators */
+.draggable-header {
+  cursor: move;
+}
+
+.draggable-header:active {
+  cursor: grabbing;
+}
+
+/* Custom scrollbar for webkit browsers */
+.table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
