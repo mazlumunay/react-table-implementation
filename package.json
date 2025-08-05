@@ -1,9 +1,19 @@
 {
   "name": "react-table-assignment",
-  "version": "1.1.0",
-  "private": true,
-  "description": "A high-performance React table implementation with drag & drop, sorting, and optimized rendering",
-  "keywords": ["react", "table", "drag-drop", "sorting", "performance"],
+  "version": "1.2.0",
+  "private": false,
+  "license": "MIT",
+  "author": "Your Name <your.email@example.com>",
+  "description": "A high-performance React table implementation with drag & drop, sorting, search, and export capabilities",
+  "keywords": ["react", "table", "drag-drop", "sorting", "performance", "export", "search"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/react-table-assignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/react-table-assignment/issues"
+  },
+  "homepage": "https://github.com/yourusername/react-table-assignment#readme",
   "dependencies": {
     "@faker-js/faker": "^8.0.0",
     "@testing-library/jest-dom": "^5.16.4",
@@ -42,7 +52,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": ".",
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
