@@ -38,7 +38,7 @@
   font-size: 1.2rem;
   opacity: 0.9;
   font-weight: 300;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   line-height: 1.5;
   position: relative;
@@ -87,4 +87,33 @@ body {
 .app-header p {
   animation-delay: 0.2s;
   animation-fill-mode: both;
+}
+
+/* Enhanced responsive design */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 40px 20px;
+  }
+  
+  .app-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .app-header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 30px 15px;
+  }
+  
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .app-header p {
+    font-size: 0.9rem;
+  }
 }

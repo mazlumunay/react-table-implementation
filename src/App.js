@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="app-header">
         <h1>React Table Assignment</h1>
-        <p>A performant data table with sorting, drag & drop column reordering, and 500+ records</p>
+        <p>A high-performance data table with drag & drop column reordering, intelligent sorting, and seamless user experience for 500+ records</p>
       </header>
       <main>
         <UserTable />
