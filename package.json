@@ -1,19 +1,19 @@
 {
-  "name": "react-table-assignment",
+  "name": "react-table-implementation",
   "version": "1.2.0",
   "private": false,
   "license": "MIT",
-  "author": "Your Name <your.email@example.com>",
+  "author": "Mazlum Unay <unaymazluml@gmail.com>",
   "description": "A high-performance React table implementation with drag & drop, sorting, search, and export capabilities",
   "keywords": ["react", "table", "drag-drop", "sorting", "performance", "export", "search"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/react-table-assignment.git"
+    "url": "https://github.com/mazlumunay/react-table-implementation"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/react-table-assignment/issues"
+    "url": "https://github.com/mazlumunay/react-table-implementation/issues"
   },
-  "homepage": "https://github.com/yourusername/react-table-assignment#readme",
+  "homepage": "http://localhost:3000/",
   "dependencies": {
     "@faker-js/faker": "^8.0.0",
     "@testing-library/jest-dom": "^5.16.4",
